@@ -1,0 +1,147 @@
+.main-body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-body-face {
+  background-image: url("../../public/mainbackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  justify-content: center;
+  color: white;
+}
+
+.main-body-face h1 {
+  color: white;
+  font-size: 80px;
+}
+
+.main-body-face p {
+  text-align: center;
+  font-size: 24px;
+  max-width: 800px;
+}
+
+#book-btn {
+  padding: 1em 3em;
+  font-size: 18px;
+  border-radius: 24px;
+  background-color: lightgray;
+  &:hover {
+    background-color: yellow;
+  }
+}
+
+.parking-informations {
+  background-color: #0191c8;
+  color: white;
+  padding: 3em;
+}
+
+.campus-container {
+  margin-top: 3em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3em;
+}
+
+/*carousel*/
+
+.testimony {
+  background-color: #0056b3;
+  padding: 3em;
+}
+
+.testimony h1 {
+  color: white;
+}
+.testimony-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 1200px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px 2px black;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.user-testimony-box {
+  text-align: center;
+}
+
+.testimony-content p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.testimony-content span {
+  font-style: italic;
+  color: #555;
+}
+
+.carousel-controls {
+  margin-top: 15px;
+
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel-controls button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carousel-controls button:hover {
+  background-color: #0056b3;
+}
+
+.updates-informations {
+  background-color: #0191c8;
+  padding: 3em;
+  color: white;
+}
+
+.updates-container {
+  margin-top: 3em;
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 12px;
+  gap: 1em;
+  max-height: 500px;
+  overflow: auto;
+}
+
+.update {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: black;
+  padding: 1em;
+  border-radius: 12px;
+  color: white;
+}

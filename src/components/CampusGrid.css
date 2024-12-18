@@ -1,0 +1,21 @@
+.campus-grid-detail {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: #f0f0f0;
+  color: black;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px 2px black;
+}
+
+.campus-grid-detail-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+#campus-parking-detail {
+  padding: 0.5em;
+  background-color: purple;
+  color: white;
+}

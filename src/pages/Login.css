@@ -1,0 +1,110 @@
+.login {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../public/Background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+}
+
+.login-box {
+  display: flex;
+  align-items: center;
+
+  max-width: 1000px;
+  margin-top: 200px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid;
+}
+
+.login-box-left,
+.login-box-right {
+  width: 50%;
+}
+
+.login-box-right {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4em;
+}
+
+.login-box-right h1 {
+  color: #7e1891;
+}
+
+.login-box-left {
+  background-color: #7e1891;
+  padding: 3em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.login-box-left img {
+  width: 100%;
+}
+.login-box-right form {
+  margin: auto;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.email-input-box {
+  display: flex;
+  border: 1px solid;
+}
+
+.email-input-box input {
+  padding: 1em;
+  width: 300px;
+  border: none;
+}
+
+.email-domain {
+  background-color: lightgray;
+  padding: 1em;
+  color: white;
+  font-size: 16px;
+}
+
+.password-input-box {
+  display: flex;
+  border: 1px solid;
+}
+
+.password-icon {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-right: 1px solid;
+  padding: 0.7em;
+}
+
+.password-input-box input {
+  padding: 1em;
+  width: 100%;
+  border: none;
+}
+
+#submit-login {
+  padding: 0.6em;
+  color: white;
+  width: 100%;
+  background-color: #7e1891;
+  align-self: center;
+
+  &:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #9d1d98;
+  }
+}

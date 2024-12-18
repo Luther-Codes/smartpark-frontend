@@ -1,0 +1,26 @@
+.landing-page-header {
+  background-color: white;
+  padding: 1em 3em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo-binus {
+  width: 100px;
+  height: 50px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.navigation li {
+  list-style-type: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

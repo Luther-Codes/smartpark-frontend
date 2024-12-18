@@ -1,0 +1,49 @@
+.history-page {
+  width: 100%;
+  height: 100vh;
+  background-color: #0191c8;
+}
+
+.history-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  max-width: 1000px;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  margin-top: 4em;
+  color: white;
+}
+.history-body-intro {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.history-body-intro > h1 {
+  font-size: 40px;
+}
+
+.history-list {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  overflow-y: auto;
+  max-height: 700px;
+  padding: 2em;
+}
+
+.history-box {
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: lightgray;
+  color: black;
+}
