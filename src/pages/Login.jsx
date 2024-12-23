@@ -18,7 +18,7 @@ export default function Login() {
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/login",
+        "https://binus-smartpark-backend.vercel.app/login",
         { email, password },
         { headers: { "Content-Type": "application/json" } }
       );

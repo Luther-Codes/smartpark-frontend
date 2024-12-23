@@ -17,7 +17,7 @@ export default function mainPage() {
       console.log("user email: ", userEmail);
 
       const result = await axios.get(
-        `http://localhost:4000/getUser/${userEmail}`
+        `https://binus-smartpark-backend.vercel.app/getUser/${userEmail}`
       );
       if (result.status == 200) {
         setCurrentUser(result.data.data);

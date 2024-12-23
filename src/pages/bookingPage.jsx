@@ -38,7 +38,7 @@ export default function BookingPage() {
   const fetchParkingSlots = async (campusName) => {
     try {
       const response = await axios.get(
-        `http://localhost:4000/api/parking-slots?campusName=${campusName}`
+        `https://binus-smartpark-backend.vercel.app/api/parking-slots?campusName=${campusName}`
       );
 
       console.log("API Response:", response);
@@ -70,7 +70,7 @@ export default function BookingPage() {
     try {
       const email = localStorage.getItem("email");
       const userData = await axios.get(
-        `http://localhost:4000/getUser/${email}`
+        `https://binus-smartpark-backend.vercel.app/getUser/${email}`
       );
 
       const bookingData = {
@@ -80,7 +80,7 @@ export default function BookingPage() {
       };
 
       const response = await axios.post(
-        "http://localhost:4000/api/bookings",
+        "https://binus-smartpark-backend.vercel.app/api/bookings",
         bookingData
       );
 

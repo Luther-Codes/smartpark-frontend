@@ -13,12 +13,12 @@ export default function HistoryPage() {
 
         // Fetch user data
         const result = await axios.get(
-          `http://localhost:4000/getUser/${email}`
+          `https://binus-smartpark-backend.vercel.app/getUser/${email}`
         );
         const userId = result.data.data[0].user_id;
 
         const historyResponse = await axios.get(
-          `http://localhost:4000/api/getParkingHistory/${userId}`
+          `https://binus-smartpark-backend.vercel.app/api/getParkingHistory/${userId}`
         );
 
         setHistory(historyResponse.data.data || []); // Ensure default value if no data
