@@ -8,12 +8,18 @@ import bandung from "../assets/bandung.jpeg";
 import senayan from "../assets/senayan.jpg";
 import semarang from "../assets/semarang.jpeg";
 import malang from "../assets/malang.jpeg";
+import { useNavigate } from "react-router-dom";
 
 export default function ParkingPage() {
-  const [currentCampus, setCurrentCampus] = useState(null);
+  const [currentCampus, setCurrentCampus] = useState("");
+  const navigate = useNavigate();
 
   const handleCampusClick = (campus) => {
     setCurrentCampus(campus);
+  };
+
+  const handleSelectCampus = () => {
+    navigate(`/map/${currentCampus}`);
   };
 
   return (
@@ -43,7 +49,11 @@ export default function ParkingPage() {
             </div>
           ))}
         </div>
-        <button id="select-campus" disabled={!currentCampus}>
+        <button
+          id="select-campus"
+          disabled={!currentCampus}
+          onClick={handleSelectCampus}
+        >
           Select
         </button>
       </div>

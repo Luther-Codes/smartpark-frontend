@@ -1,10 +1,30 @@
 import CampusGrid from "../components/CampusGrid";
 import HeaderMain from "../components/HeaderMain";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./mainPage.css";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 export default function mainPage() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentUser, setCurrentUser] = useState(null);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      const userEmail = localStorage.getItem("email");
+
+      console.log("user email: ", userEmail);
+
+      const result = await axios.get(
+        `http://localhost:4000/getUser/${userEmail}`
+      );
+      if (result.status == 200) {
+        setCurrentUser(result.data.data);
+      }
+    };
+    fetchUser();
+  }, []);
 
   const testimonies = [
     {
@@ -51,7 +71,10 @@ export default function mainPage() {
             real-time space availability, seamless reservations, and efficient
             parking management across all BINUS campuses.
           </p>
-          <button id="book-btn"> Book Now</button>
+          <button id="book-btn" onClick={() => navigate("/booking")}>
+            {" "}
+            Book Now
+          </button>
         </div>
         <div className="parking-informations">
           <h1> Parking Availability </h1>

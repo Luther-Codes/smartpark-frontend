@@ -1,0 +1,21 @@
+.map-body {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+}
+
+.map-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  font-size: 30px;
+  gap: 3em;
+}
+
+.map-body img {
+  width: 70%;
+  height: 60%;
+}

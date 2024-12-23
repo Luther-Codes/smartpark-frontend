@@ -7,6 +7,7 @@ import MainPage from "./pages/mainPage";
 import ParkingPage from "./pages/parkingPage";
 import BookingPage from "./pages/bookingPage";
 import HistoryPage from "./pages/historyPage";
+import Map from "./pages/map";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -20,6 +21,7 @@ function App() {
         <Route path="/parking" element={<ParkingPage />} />
         <Route path="/booking" element={<BookingPage />} />
         <Route path="/history" element={<HistoryPage />} />
+        <Route path="/map/:place" element={<Map />} />
       </Routes>
     </Router>
   );

@@ -2,6 +2,12 @@
   width: 100%;
   height: 100vh;
   background-color: #0191c8;
+  position: relative;
+}
+
+.booking-page.blurred-background .booking-body {
+  filter: blur(5px);
+  pointer-events: none;
 }
 
 .booking-page h1 {
@@ -57,9 +63,8 @@
 
 .book-input-detail input {
   padding: 1.3em;
-  border: none;
-  border-radius: 12px;
-  background-color: #b3c8cf;
+  border: 1px solid;
+
   color: black;
 }
 
@@ -118,6 +123,103 @@
   font-size: 20px;
 }
 
-.date-picker {
+#select-slot {
+  padding: 1em 3em;
   border-radius: 12px;
+  border: none;
+  background-color: greenyellow;
+}
+
+.booking-body {
+  transition: filter 0.3s ease-in-out;
+}
+
+.booking-body.blurred {
+  filter: blur(8px);
+  pointer-events: none;
+}
+
+.parking-map-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.parking-map {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  max-width: 600px;
+  width: 90%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
+}
+
+.grid-item {
+  padding: 1em;
+  text-align: center;
+
+  &:hover {
+    border: 3px solid yellow;
+  }
+}
+
+.grid-item.green {
+  background: green;
+}
+
+.grid-item.red {
+  background: red;
+}
+
+#close-map {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.custom-input {
+  border: none !important;
+  outline: none; /* Removes the outline when focused */
+  box-shadow: none; /* Removes any shadow effect */
+}
+
+.selected-slot-text {
+  margin-top: 10px;
+  font-size: 16px;
+  border: 1px solid;
+  text-align: center;
+  border-radius: 12px;
+  padding: 1em;
+  background-color: #007bff;
+
+  color: white;
+}
+
+.pick-button {
+  padding: 0.5em;
+  border: none;
+  background-color: black;
+  color: white;
+
+  &:hover {
+    background-color: gray;
+  }
 }

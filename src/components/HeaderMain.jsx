@@ -8,6 +8,8 @@ export default function HeaderMain() {
   const location = useLocation();
   const [activeLink, setActiveLink] = useState("");
 
+  const email = localStorage.getItem("email");
+
   useEffect(() => {
     switch (location.pathname) {
       case "/main":
@@ -63,7 +65,7 @@ export default function HeaderMain() {
         </Link>
       </ul>
       <div className="user-profile">
-        <span>Vincentius Jacob Gunawan</span>
+        <span>{email} </span>
         <ArrowDropDownIcon />
       </div>
     </div>
