@@ -1,5 +1,5 @@
 import "./Header.css";
-import logoBinus from "../assets/logoBinus.png";
+import logoBinus from "../assets/logobinus.png";
 
 export default function Header() {
   return (
