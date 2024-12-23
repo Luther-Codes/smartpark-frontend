@@ -1,4 +1,4 @@
-import logoBinus from "../../public/logoBinus.png";
+import logoBinus from "../assets/logoBinus.png";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import "./HeaderMain.css";
 import { Link, useLocation } from "react-router-dom";

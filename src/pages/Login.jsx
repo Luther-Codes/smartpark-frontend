@@ -4,7 +4,7 @@ import Swal from "sweetalert2";
 import Header from "../components/Header";
 import HttpsIcon from "@mui/icons-material/Https";
 import "./Login.css";
-import binusFoto from "../../public/fotoBinus.png";
+import binusFoto from "../assets/fotoBinus.png";
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {
