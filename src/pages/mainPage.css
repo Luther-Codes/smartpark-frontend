@@ -6,7 +6,7 @@
 }
 
 .main-body-face {
-  background-image: url("../../public/mainbackground.png");
+  background-image: url("../assets/mainbackground.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
